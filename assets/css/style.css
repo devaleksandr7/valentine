@@ -5,6 +5,18 @@
   margin: 0;
 }
 
+    /* Imagem centralizada e responsiva */
+.container img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 body {
   display: flex;
   justify-content: center; /* centraliza horizontalmente */
@@ -41,6 +53,6 @@ body {
 .container p {
   margin: 10px 0;
 }
-p{
+p {
   font-size: 18px;
 }

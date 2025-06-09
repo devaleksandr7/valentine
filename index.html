@@ -6,19 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modelo</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <style>
-    /* Imagem centralizada e responsiva */
-    .container img {
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -31,46 +19,7 @@
     <p>Te amo, obrigado por me aturar e cuidar de mim por todo esse tempo!</p>
   </div>
 
-  <script>
-    const imagens = [
-      "iamge/foto1.JPG",
-      "iamge/foto2.JPG",
-      "iamge/foto3.JPG"
-    ];
-
-    let index = 0;
-    const img = document.getElementById("carousel");
-
-    setInterval(() => {
-      index = (index + 1) % imagens.length;
-      img.src = imagens[index];
-    }, 4000); // troca a cada 4 segundos
-
-    const dataInicio = new Date("2019-09-23");
-    const dataFim = new Date("2025-06-12");
-
-    function calcularDiferenca(data1, data2) {
-      let anos = data2.getFullYear() - data1.getFullYear();
-      let meses = data2.getMonth() - data1.getMonth();
-      let dias = data2.getDate() - data1.getDate();
-
-      if (dias < 0) {
-        meses--;
-        dias += new Date(data2.getFullYear(), data2.getMonth(), 0).getDate();
-      }
-      if (meses < 0) {
-        anos--;
-        meses += 12;
-      }
-
-      return { anos, meses, dias };
-    }
-
-    const diferenca = calcularDiferenca(dataInicio, dataFim);
-
-    document.getElementById("tempoDecorrido").textContent =
-      `${diferenca.anos} anos, ${diferenca.meses} meses e ${diferenca.dias} dias.`;
-  </script>
+  <script src="assets/js/"></script>
 </body>
 
 </html>
