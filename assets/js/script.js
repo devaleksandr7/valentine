@@ -1,5 +1,4 @@
-
-    const imagens = [
+const imagens = [
       "iamge/foto1.JPG",
       "iamge/foto2.JPG",
       "iamge/foto3.JPG"
