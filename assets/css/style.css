@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  min-height: 100vh;       /* ocupa a altura total da tela */
+
+  font-family: cursive, sans-serif;
+  font-size: clamp(1em, 3vw, 1.3em);
+  line-height: 1.5em;
+  background-color: white;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+  background-repeat: repeat;
+  background-size: 35px 40px;
+}
+
+
+.container {
+  max-width: 100%;
+
+  width: 90%;
+  margin: 30px auto;
+  background: #f4d9d9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 5px dashed #f3a0a0;
+}
+
+.container h1 {
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  margin-bottom: 20px;
+}
+
+.container p {
+  margin: 10px 0;
+}
